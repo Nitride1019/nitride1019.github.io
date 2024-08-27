@@ -63,8 +63,7 @@ $$Ans:\ln\left[ 2\left( \frac{3x+1}{3} \right)^2+\left( \frac{3y-1}{3} \right)^2
 ## 恰當型
 ### 型態
 $$M(x,y)dx+N(x,y)dy=0$$
-$$
-且存在\Phi使 \frac{d\Phi}{dx}=M(x,y), \frac{d\Phi}{dy}=N(x,y)
+$$且存在\Phi使 \frac{d\Phi}{dx}=M(x,y), \frac{d\Phi}{dy}=N(x,y)
 $$
 $$即\frac{\partial M}{\partial y}= \frac{\partial^2 \Phi}{\partial x \partial y}=\frac{\partial N}{\partial x}$$
 
@@ -180,7 +179,7 @@ $$令特解y_{p}=u_{1}(x)y_{1}+u_{2}(x)y_{2}$$
 $$此時強加一個條件: u_{1}'y_{1}+u_{2}'y_{2}=0$$
 
 $$可得\begin{cases}u_{1}'y_{1}+u_{2}'y_{2}=0\newline u_{1}'y_{1}'+u_{2}'y_{2}'=Q(x)\end{cases}$$
-$$即可用克拉瑪公式求得u'_{1},u'_{2}。$$
+$$即可用克拉瑪公式求得u_'{1},u_'{2}。$$
 
 $$再積分即得u_{1},u_{2}$$
 $$高階ODE也可用此方法，再加入一些強制條件後求得。$$
@@ -292,7 +291,7 @@ $$y''+P(x)y'+Q(x)y=0$$
 $$且x=x_{0}為規則異點$$
 
 ### 解法
-$$ y=\sum^{\infty}_{n=0}a_{n}(x-x_{0})^{n+r} $$
+$$y=\sum^{\infty}_{n=0} a_n (x-x_0)^{n+r} $$
 
 
 ## Legendre Polynomials
@@ -340,17 +339,17 @@ $$令Y_{p}=\frac{J_{p}\cos p\pi-J_{-p}}{\sin p\pi}$$
 $$則Bessel方程式的解為y(x)=c_{1}J_{p}+c_{2}Y_{p}$$
 $$當p為整數時，用羅必達法則可求得$$
 
-$$Y_{p}=\frac{2}{\pi}\left( \ln \frac{x}{2} \right)J_{n}-\frac{1}{\pi}\sum^{n-1}_{m=0} \frac{(n-m-1)!}{m!} \left( \frac{x}{2} \right)^{2m-n}- \frac{1}{\pi}\sum^\infty_{m=0} [\Phi(m)+ \Phi(n+m)] \frac{(-1)^m}{m!(n+m)!} \left( \frac{x}{2} \right)^{2m+n}$$
+$$Y_p=\frac{2}{\pi} ( \ln \frac{x}{2} ) J_n- \frac{1}{\pi}\sum_{m=0}^{n-1} \frac{(n-m-1)!}{m!} \frac{x}{2}^{2m-n}- \frac{1}{\pi}\sum^\infty_{m=0} [\Phi(m)+ \Phi(n+m)] \frac{(-1)^m}{m!(n+m)!} \frac{x}{2}^{2m+n}$$
 
 
 $$其中\Phi(x)=1+\frac{1}{2}+\frac{1}{3}+\dots+\frac{1}{p},\Phi(0)=0$$
 
 ### 第三類Bessel函數
-$$令H^{(1)}_{p}(x)=J_{p}(x)+iY_{p}(x)$$
+$$令H^{(1)}_p(x)=J_p(x)+iY_p(x)$$
 
-$$H^{(2)}_{p}(x)=J_{p}(x)-iY_{p}(x)$$
+$$H^{(2)}_p(x)=J_p(x)-iY_p(x)$$
 
-$$得Bessel方程式通解為y(x)=c_{1}H^{(1)}_{p}(x)+c_{2}H^{(2)}_{p}(x)$$
+$$得Bessel方程式通解為y(x) = c_1H^{(1)}_p(x) + c_2H^{(2)}_p(x) $$
 
 
 ### 修正型Bessel函數
@@ -367,7 +366,7 @@ $$得I_{p}(x)=i^{-p}J_{p}(ix),I_{-p}(x)=i^pJ_{-p}(ix)$$
 $$故當p不為整數時，通解y(x)=c_{1}I_{p}(x)+c_{2}I_{-p}(x)$$
 
 #### 第二類修正型Bessel函數
-$$令K_p(x)= \frac{\pi}{2} \frac{I_{-p}(x)-I_{p}(x)}{\sin p\pi}$$
+$$令K_p(x)=\frac{\pi}{2} \frac{I_{-p}(x)-I_{p}(x)}{\sin p\pi}$$
 
 $$則通解可寫為y(x)=c_{1}I_{p}(x)+c_{2}K_{p}(x)，p\in R$$
 
@@ -377,9 +376,12 @@ $$\frac{d}{dx}[x^pJ_{p}(x)]=x^pJ_{p-1}(x)$$
 
 $$\frac{d}{dx}[x^{-p}J_{p}(x)]=-x^{-p}J_{p+1}(x)$$
 
-$$pJ_{p}(x) + xJ'_p(x)=J_{p-1}(x)$$
-$$pJ_{p}(x)+xJ'_p(x)=xJ_{p-1}(x)$$
-$$-pJ_{p}(x)+xJ'_p(x)=-xJ_{p+1}(x)$$
+$$pJ_{p}(x)+xJ_'p(x)=J_{p-1}(x)$$
+
+$$pJ_{p}(x)+xJ_'p(x)=xJ_{p-1}(x)$$
+
+$$-pJ_{p}(x)+xJ_'p(x)=-xJ_{p+1}(x)$$
+
 $$J_{p+1}(x)=\frac{2p}{x}J_{p}(x)-J_{p-1}(x)$$
 
 ### 半階Bessel函數
@@ -394,8 +396,12 @@ $$I_{-\frac{1}{2}}(x)= \sqrt{ \frac{2}{\pi x} }\cosh x$$
 
 # 後記
 把工程數學學習要訣上冊打完3/8了(灑花)。
+
 發現還有下冊ヾ(;ﾟ;Д;ﾟ;)ﾉﾞ
+
 還好有Obsidian有Latex的快捷輸入 我才花比較少時間。
+
 原本Notion上寫 寫到快懷疑人生。
+
 還有架網站也花了蠻多時間的(畢竟我平常也不會沒事去架網站)
 ![p](20240731_195146.jpg)
