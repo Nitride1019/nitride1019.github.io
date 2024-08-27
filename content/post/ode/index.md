@@ -2,6 +2,7 @@
 author = "Nitride"
 title = "工程數學-常微分方程 重點整理"
 date = "2024-08-01"
+image="images.png"
 tags = [
     "工程數學",
     "數學",

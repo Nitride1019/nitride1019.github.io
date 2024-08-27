@@ -1133,7 +1133,7 @@ $$dp[t][i]=\sum_{j=0}^{i-1}(dp[t-1][j]\cdot num[j+1][i])$$&lt;/p&gt;
         <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/%E5%B7%A5%E7%A8%8B%E6%95%B8%E5%AD%B8-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86/</guid>
-        <description>&lt;h1 id=&#34;前言&#34;&gt;前言
+        <description>&lt;img src="http://localhost:1313/p/%E5%B7%A5%E7%A8%8B%E6%95%B8%E5%AD%B8-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86/images.png" alt="Featured image of post 工程數學-常微分方程 重點整理" /&gt;&lt;h1 id=&#34;前言&#34;&gt;前言
 &lt;/h1&gt;&lt;p&gt;注意!!!
 本文是拿來複習用的，所以&lt;strong&gt;強烈建議&lt;/strong&gt;先學過一次再來看。我推薦劉明昌的&amp;laquo;工程數學學習要訣&amp;raquo;上下冊，本文大部分都是從這本書以及一些網路資源上看的。
 撰寫本文花了我一個下午。因為我平常沒有做筆記的習慣，所以大家想看的話我再寫別ㄉ。&lt;/p&gt;
