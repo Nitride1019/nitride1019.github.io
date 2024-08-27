@@ -6,6 +6,39 @@
         <description>Recent content in Tags on Nitride&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <copyright>Nitride</copyright><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+        <copyright>Nitride</copyright>
+        <lastBuildDate>Sat, 24 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>競程</title>
+        <link>http://localhost:1313/tags/%E7%AB%B6%E7%A8%8B/</link>
+        <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E7%AB%B6%E7%A8%8B/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>題解</title>
+        <link>http://localhost:1313/tags/%E9%A1%8C%E8%A7%A3/</link>
+        <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E9%A1%8C%E8%A7%A3/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>學習技巧</title>
+        <link>http://localhost:1313/tags/%E5%AD%B8%E7%BF%92%E6%8A%80%E5%B7%A7/</link>
+        <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E5%AD%B8%E7%BF%92%E6%8A%80%E5%B7%A7/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>高中</title>
+        <link>http://localhost:1313/tags/%E9%AB%98%E4%B8%AD/</link>
+        <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E9%AB%98%E4%B8%AD/</guid>
+        <description></description>
+        </item>
+        
     </channel>
 </rss>
