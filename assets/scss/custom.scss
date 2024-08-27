@@ -238,19 +238,7 @@
     object-fit: cover;
     border-radius: 17%;
   }
-  
-  //----------------------------------------------------
-  //固定代码块的高度
-  .article-content {
-    .highlight {
-        padding: var(--card-padding);
-        pre {
-            width: auto;
-            max-height: 20em;
-        }
-    }
-  }
-  
+
   //--------------------------------------------------
   // 修改首页搜索框样式
   .search-form.widget input {
