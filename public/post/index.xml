@@ -1133,7 +1133,7 @@ $$dp[t][i]=\sum_{j=0}^{i-1}(dp[t-1][j]\cdot num[j+1][i])$$&lt;/p&gt;
         <pubDate>Thu, 01 Aug 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/%E5%B7%A5%E7%A8%8B%E6%95%B8%E5%AD%B8-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86/</guid>
-        <description>&lt;h1 id=&#34;前言&#34;&gt;前言
+        <description>&lt;img src="http://localhost:1313/p/%E5%B7%A5%E7%A8%8B%E6%95%B8%E5%AD%B8-%E5%B8%B8%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B-%E9%87%8D%E9%BB%9E%E6%95%B4%E7%90%86/images.png" alt="Featured image of post 工程數學-常微分方程 重點整理" /&gt;&lt;h1 id=&#34;前言&#34;&gt;前言
 &lt;/h1&gt;&lt;p&gt;注意!!!
 本文是拿來複習用的，所以&lt;strong&gt;強烈建議&lt;/strong&gt;先學過一次再來看。我推薦劉明昌的&amp;laquo;工程數學學習要訣&amp;raquo;上下冊，本文大部分都是從這本書以及一些網路資源上看的。
 撰寫本文花了我一個下午。因為我平常沒有做筆記的習慣，所以大家想看的話我再寫別ㄉ。&lt;/p&gt;
@@ -3126,7 +3126,7 @@ $$g_{i}=\frac{m(n-1)+i(n-1)g_{i-1}}{m-i}$$
     &gt;小粉兔的題解&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;首先考慮$k=1$的情況&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;當我們選取一個數$p_i$移至序列的最前方時，減少的逆序對數為$\sum^{i-1}&lt;em&gt;{j=1}[p&lt;/em&gt;{j}&amp;gt;p_{i}]-\sum^{i-1}&lt;em&gt;{j=1}[p&lt;/em&gt;{j}&amp;lt;p_{i}]$，即$p_i$ 在原先位置與其前方的元素所產生的逆序對數減去順序對數(後方的元素因將$p_i$ 移至前方後相對位置不改變，因此不會影響原序列的逆序對數)。&lt;/li&gt;
+&lt;li&gt;當我們選取一個數$p_i$移至序列的最前方時，減少的逆序對數為$\sum_{j=1}^{i-1}[p_j&amp;gt;p_i]-\sum_{j=1}^{i-1}[p_{j}&amp;lt;p_{i}]$，即$p_i$ 在原先位置與其前方的元素所產生的逆序對數減去順序對數(後方的元素因將$p_i$ 移至前方後相對位置不改變，因此不會影響原序列的逆序對數)。&lt;/li&gt;
 &lt;li&gt;我們將這個數記為$d_{i}$。至於要怎麼得到$d_i$，我們可以利用樹狀數組，並同時得到原序列的逆序對數$inv$。&lt;/li&gt;
 &lt;li&gt;顯然，當$k=1$時，答案即為最大的$d_{i}$。&lt;/li&gt;
 &lt;/ul&gt;

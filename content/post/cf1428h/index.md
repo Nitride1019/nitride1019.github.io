@@ -9,6 +9,7 @@ tags = [
 categories = [
     "競程",
 ]
+toc = false
 +++
 
 # 題目
