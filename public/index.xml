@@ -1165,28 +1165,27 @@ $$令\lambda=\frac{1}{x}，得 \frac{dy}{dx}=-\frac{M\left( 1, \frac{y}{x} \righ
 $$再令y=vx,dy=vdx+xdv$$
 $$得 \frac{dy}{dx}= \frac{vdx+xdv}{dx}-\frac{M(1,v)}{N(1, v)}=f(v)$$
 $$移項得 \frac{dv}{f(v)-v}=\frac{dx}{x}，即可用變數分離型解法求解$$&lt;/p&gt;
-&lt;h3 id=&#34;例題-2x-y1dxxydy0&#34;&gt;例題: $(2x-y+1)dx+(x+y)dy=0$
-&lt;/h3&gt;&lt;p&gt;$$解: 先平移兩函數使其成為齊次方程式$$&lt;/p&gt;
-&lt;p&gt;$$\begin{cases}2x-y+1=0\newline x+y=0\end{cases}$$&lt;/p&gt;
-&lt;p&gt;$$得 x=-\frac{1}{3},y=\frac{1}{3}$$&lt;/p&gt;
-&lt;p&gt;$$令X=x-\left( -\frac{1}{3} \right),Y=y-\frac{1}{3}$$
-$$代回原方程式得(2X-Y)dx+(X+Y)dy=0$$&lt;/p&gt;
-&lt;p&gt;$$即可用齊次函數法解$$
-$$Ans:\ln\left[ 2\left( \frac{3x+1}{3} \right)^2+\left( \frac{3y-1}{3} \right)^2 \right]=C-\sqrt{ 2 }\arctan \frac{3y-1}{\sqrt{ 2 }(3x+1)}$$&lt;/p&gt;
-&lt;h3 id=&#34;任意axbyckdxdxeyfkdy型之方程式皆可用此法解&#34;&gt;任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解
-&lt;/h3&gt;&lt;h2 id=&#34;恰當型&#34;&gt;恰當型
+&lt;h3 id=&#34;性質-任意axbyckdxdxeyfkdy型之方程式皆可用此法解&#34;&gt;性質: 任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解
+&lt;/h3&gt;&lt;h4 id=&#34;證明&#34;&gt;證明
+&lt;/h4&gt;&lt;p&gt;$$平移兩函數使其成為齊次方程式即可$$
+$$解\begin{cases}ax+by+c=0\newline dx+ey+f=0\end{cases}$$
+$$得x=x_0,y=y_0後$$
+$$令X=x-x_0,Y=y-y_0$$
+$$帶回原方程式得(aX+bY)^kdX+(dX+eY)^kdY=0$$
+$$即可用齊次函數法解$$&lt;/p&gt;
+&lt;h2 id=&#34;恰當型&#34;&gt;恰當型
 &lt;/h2&gt;&lt;h3 id=&#34;型態-2&#34;&gt;型態
 &lt;/h3&gt;&lt;p&gt;$$M(x,y)dx+N(x,y)dy=0$$
 $$且存在\Phi使 \frac{d\Phi}{dx}=M(x,y), \frac{d\Phi}{dy}=N(x,y)
 $$
 $$即\frac{\partial M}{\partial y}= \frac{\partial^2 \Phi}{\partial x \partial y}=\frac{\partial N}{\partial x}$$&lt;/p&gt;
-&lt;p&gt;$$(與微積分4的,Green&amp;rsquo;s,Theorem學到的保守函數一樣)$$&lt;/p&gt;
+&lt;p&gt;(與微積分4的Green&amp;rsquo;s Theorem學到的保守函數一樣)&lt;/p&gt;
 &lt;h3 id=&#34;解法-2&#34;&gt;解法
 &lt;/h3&gt;&lt;p&gt;$$對\Phi積分得\Phi=\int M(x,y) , dx+f(y)=\int N(x,y) , dy+g(x)$$&lt;/p&gt;
 &lt;h3 id=&#34;特殊情況mxydxnxydy0但fracpartial-mpartial-yne-fracpartial-npartial-x且存在積分因子ixy使-fracpartialmipartial-yfracpartialnipartial-x&#34;&gt;特殊情況:$M(x,y)dx+N(x,y)dy=0，但\frac{\partial M}{\partial y}\ne \frac{\partial N}{\partial x}，且存在積分因子I(x,y)使 \frac{\partial(MI)}{\partial y}=\frac{\partial(NI)}{\partial x}$
 &lt;/h3&gt;&lt;h4 id=&#34;case-1-fracfracpartial-m-partial-y-fracpartial-npartial-xnfx&#34;&gt;Case 1: $\frac{\frac{\partial M}{ \partial y}-\frac{\partial N}{\partial x}}{N}=f(x)$
 &lt;/h4&gt;&lt;p&gt;$$I=e^{\int f(x) , dx}$$&lt;/p&gt;
-&lt;h5 id=&#34;證明&#34;&gt;證明
+&lt;h5 id=&#34;證明-1&#34;&gt;證明
 &lt;/h5&gt;&lt;p&gt;$$由\frac{\partial(MI)}{\partial y}= \frac{\partial(NI)}{\partial x}可得 M \frac{\partial I}{\partial y}+I \frac{\partial M}{\partial y}=N \frac{\partial I}{\partial x}+I \frac{\partial N}{\partial x}$$
 $$且I僅與x有關，故 \frac{\partial I}{\partial y}=0$$
 $$移項得I\left( \frac{\partial M}{\partial y}-\frac{\partial N}{\partial x} \right)=N \frac{\partial I}{\partial x}$$
@@ -1271,7 +1270,7 @@ $$高階ODE也可用此方法，再加入一些強制條件後求得。$$&lt;/p&
 $$代入得y_{h}=x^a[C_{1}\cos(b\ln x)+C_{2}\sin(b\ln x)]$$&lt;/p&gt;
 &lt;h4 id=&#34;3-存在重根&#34;&gt;(3) 存在重根
 &lt;/h4&gt;&lt;p&gt;$$y_{h}=c_{1}x^m+c_{2}x^m\ln x$$&lt;/p&gt;
-&lt;h5 id=&#34;證明-1&#34;&gt;證明
+&lt;h5 id=&#34;證明-2&#34;&gt;證明
 &lt;/h5&gt;&lt;p&gt;$$令第二個解y_2=u(x)y_{1}$$
 $$代入即可得u(x)=\ln x$$&lt;/p&gt;
 &lt;h3 id=&#34;通解解y_p解法&#34;&gt;通解解$y_p$解法
@@ -1285,7 +1284,7 @@ $$代入即可得u(x)=\ln x$$&lt;/p&gt;
 $$可由另一個n-1階微分方程b_{n-1}(x)y^{(n-1)}+b_{n-2}(x)y^{(n-2)}+\dots+b_{1}(x)y&amp;rsquo;+b_{0}y=Q(x)微分1次而得$$&lt;/p&gt;
 &lt;h3 id=&#34;條件&#34;&gt;條件
 &lt;/h3&gt;&lt;p&gt;$a_{0}-a_1&amp;rsquo;+a_{2}&amp;rsquo;&amp;rsquo;-\dots=0$&lt;/p&gt;
-&lt;h4 id=&#34;證明-2&#34;&gt;證明
+&lt;h4 id=&#34;證明-3&#34;&gt;證明
 &lt;/h4&gt;&lt;p&gt;設原方程式可由另一方程式得到，比較係數即可。&lt;/p&gt;
 &lt;h2 id=&#34;降階法&#34;&gt;降階法
 &lt;/h2&gt;&lt;h3 id=&#34;型態-10&#34;&gt;型態
@@ -3225,9 +3224,11 @@ $$g_{i}=\frac{m(n-1)+i(n-1)g_{i-1}}{m-i}$$
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;60
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;61
 &lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;62
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;63
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c++&#34; data-lang=&#34;c++&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define ll long long
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-cpp&#34; data-lang=&#34;cpp&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#include&lt;/span&gt; &lt;span class=&#34;cpf&#34;&gt;&amp;lt;bits/stdc++.h&amp;gt;&lt;/span&gt;&lt;span class=&#34;cp&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#define ll long long
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;using&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;namespace&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;std&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;maxn&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;500005&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;

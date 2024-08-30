@@ -52,7 +52,8 @@ categories = [
 
 
 # 完整程式碼
-```cpp[](<#include %3Cbits/stdc++.h%3E
+```cpp
+#include <bits/stdc++.h>
 #define ll long long
 using namespace std;
 

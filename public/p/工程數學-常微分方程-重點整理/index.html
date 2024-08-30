@@ -100,8 +100,11 @@
       <ol>
         <li><a href="#型態-1">型態</a></li>
         <li><a href="#解法-1">解法</a></li>
-        <li><a href="#例題-2x-y1dxxydy0">例題: $(2x-y+1)dx+(x+y)dy=0$</a></li>
-        <li><a href="#任意axbyckdxdxeyfkdy型之方程式皆可用此法解">任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解</a></li>
+        <li><a href="#性質-任意axbyckdxdxeyfkdy型之方程式皆可用此法解">性質: 任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解</a>
+          <ol>
+            <li><a href="#證明">證明</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
     <li><a href="#恰當型">恰當型</a>
@@ -186,7 +189,7 @@
         <li><a href="#型態-9">型態</a></li>
         <li><a href="#條件">條件</a>
           <ol>
-            <li><a href="#證明-2">證明</a></li>
+            <li><a href="#證明-3">證明</a></li>
           </ol>
         </li>
       </ol>
@@ -369,28 +372,27 @@ $$令\lambda=\frac{1}{x}，得 \frac{dy}{dx}=-\frac{M\left( 1, \frac{y}{x} \righ
 $$再令y=vx,dy=vdx+xdv$$
 $$得 \frac{dy}{dx}= \frac{vdx+xdv}{dx}-\frac{M(1,v)}{N(1, v)}=f(v)$$
 $$移項得 \frac{dv}{f(v)-v}=\frac{dx}{x}，即可用變數分離型解法求解$$</p>
-<h3 id="例題-2x-y1dxxydy0">例題: $(2x-y+1)dx+(x+y)dy=0$
-</h3><p>$$解: 先平移兩函數使其成為齊次方程式$$</p>
-<p>$$\begin{cases}2x-y+1=0\newline x+y=0\end{cases}$$</p>
-<p>$$得 x=-\frac{1}{3},y=\frac{1}{3}$$</p>
-<p>$$令X=x-\left( -\frac{1}{3} \right),Y=y-\frac{1}{3}$$
-$$代回原方程式得(2X-Y)dx+(X+Y)dy=0$$</p>
-<p>$$即可用齊次函數法解$$
-$$Ans:\ln\left[ 2\left( \frac{3x+1}{3} \right)^2+\left( \frac{3y-1}{3} \right)^2 \right]=C-\sqrt{ 2 }\arctan \frac{3y-1}{\sqrt{ 2 }(3x+1)}$$</p>
-<h3 id="任意axbyckdxdxeyfkdy型之方程式皆可用此法解">任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解
-</h3><h2 id="恰當型">恰當型
+<h3 id="性質-任意axbyckdxdxeyfkdy型之方程式皆可用此法解">性質: 任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解
+</h3><h4 id="證明">證明
+</h4><p>$$平移兩函數使其成為齊次方程式即可$$
+$$解\begin{cases}ax+by+c=0\newline dx+ey+f=0\end{cases}$$
+$$得x=x_0,y=y_0後$$
+$$令X=x-x_0,Y=y-y_0$$
+$$帶回原方程式得(aX+bY)^kdX+(dX+eY)^kdY=0$$
+$$即可用齊次函數法解$$</p>
+<h2 id="恰當型">恰當型
 </h2><h3 id="型態-2">型態
 </h3><p>$$M(x,y)dx+N(x,y)dy=0$$
 $$且存在\Phi使 \frac{d\Phi}{dx}=M(x,y), \frac{d\Phi}{dy}=N(x,y)
 $$
 $$即\frac{\partial M}{\partial y}= \frac{\partial^2 \Phi}{\partial x \partial y}=\frac{\partial N}{\partial x}$$</p>
-<p>$$(與微積分4的,Green&rsquo;s,Theorem學到的保守函數一樣)$$</p>
+<p>(與微積分4的Green&rsquo;s Theorem學到的保守函數一樣)</p>
 <h3 id="解法-2">解法
 </h3><p>$$對\Phi積分得\Phi=\int M(x,y) , dx+f(y)=\int N(x,y) , dy+g(x)$$</p>
 <h3 id="特殊情況mxydxnxydy0但fracpartial-mpartial-yne-fracpartial-npartial-x且存在積分因子ixy使-fracpartialmipartial-yfracpartialnipartial-x">特殊情況:$M(x,y)dx+N(x,y)dy=0，但\frac{\partial M}{\partial y}\ne \frac{\partial N}{\partial x}，且存在積分因子I(x,y)使 \frac{\partial(MI)}{\partial y}=\frac{\partial(NI)}{\partial x}$
 </h3><h4 id="case-1-fracfracpartial-m-partial-y-fracpartial-npartial-xnfx">Case 1: $\frac{\frac{\partial M}{ \partial y}-\frac{\partial N}{\partial x}}{N}=f(x)$
 </h4><p>$$I=e^{\int f(x) , dx}$$</p>
-<h5 id="證明">證明
+<h5 id="證明-1">證明
 </h5><p>$$由\frac{\partial(MI)}{\partial y}= \frac{\partial(NI)}{\partial x}可得 M \frac{\partial I}{\partial y}+I \frac{\partial M}{\partial y}=N \frac{\partial I}{\partial x}+I \frac{\partial N}{\partial x}$$
 $$且I僅與x有關，故 \frac{\partial I}{\partial y}=0$$
 $$移項得I\left( \frac{\partial M}{\partial y}-\frac{\partial N}{\partial x} \right)=N \frac{\partial I}{\partial x}$$
@@ -475,7 +477,7 @@ $$高階ODE也可用此方法，再加入一些強制條件後求得。$$</p>
 $$代入得y_{h}=x^a[C_{1}\cos(b\ln x)+C_{2}\sin(b\ln x)]$$</p>
 <h4 id="3-存在重根">(3) 存在重根
 </h4><p>$$y_{h}=c_{1}x^m+c_{2}x^m\ln x$$</p>
-<h5 id="證明-1">證明
+<h5 id="證明-2">證明
 </h5><p>$$令第二個解y_2=u(x)y_{1}$$
 $$代入即可得u(x)=\ln x$$</p>
 <h3 id="通解解y_p解法">通解解$y_p$解法
@@ -489,7 +491,7 @@ $$代入即可得u(x)=\ln x$$</p>
 $$可由另一個n-1階微分方程b_{n-1}(x)y^{(n-1)}+b_{n-2}(x)y^{(n-2)}+\dots+b_{1}(x)y&rsquo;+b_{0}y=Q(x)微分1次而得$$</p>
 <h3 id="條件">條件
 </h3><p>$a_{0}-a_1&rsquo;+a_{2}&rsquo;&rsquo;-\dots=0$</p>
-<h4 id="證明-2">證明
+<h4 id="證明-3">證明
 </h4><p>設原方程式可由另一方程式得到，比較係數即可。</p>
 <h2 id="降階法">降階法
 </h2><h3 id="型態-10">型態

@@ -45,20 +45,14 @@ $$再令y=vx,dy=vdx+xdv$$
 $$得 \frac{dy}{dx}= \frac{vdx+xdv}{dx}-\frac{M(1,v)}{N(1, v)}=f(v)$$
 $$移項得 \frac{dv}{f(v)-v}=\frac{dx}{x}，即可用變數分離型解法求解$$
 
-### 例題: $(2x-y+1)dx+(x+y)dy=0$
-$$解: 先平移兩函數使其成為齊次方程式$$
-
-$$\begin{cases}2x-y+1=0\newline x+y=0\end{cases}$$
-
-$$得 x=-\frac{1}{3},y=\frac{1}{3}$$
-
-$$令X=x-\left( -\frac{1}{3} \right),Y=y-\frac{1}{3}$$
-$$代回原方程式得(2X-Y)dx+(X+Y)dy=0$$
-
+### 性質: 任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解
+#### 證明
+$$平移兩函數使其成為齊次方程式即可$$
+$$解\begin{cases}ax+by+c=0\newline dx+ey+f=0\end{cases}$$
+$$得x=x_0,y=y_0後$$
+$$令X=x-x_0,Y=y-y_0$$
+$$帶回原方程式得(aX+bY)^kdX+(dX+eY)^kdY=0$$
 $$即可用齊次函數法解$$
-$$Ans:\ln\left[ 2\left( \frac{3x+1}{3} \right)^2+\left( \frac{3y-1}{3} \right)^2 \right]=C-\sqrt{ 2 }\arctan \frac{3y-1}{\sqrt{ 2 }(3x+1)}$$
-
-### 任意$(ax+by+c)^kdx+(dx+ey+f)^kdy$型之方程式皆可用此法解
 
 
 ## 恰當型
@@ -68,7 +62,7 @@ $$且存在\Phi使 \frac{d\Phi}{dx}=M(x,y), \frac{d\Phi}{dy}=N(x,y)
 $$
 $$即\frac{\partial M}{\partial y}= \frac{\partial^2 \Phi}{\partial x \partial y}=\frac{\partial N}{\partial x}$$
 
-$$(與微積分4的\,Green's\,Theorem學到的保守函數一樣)$$
+(與微積分4的Green's Theorem學到的保守函數一樣)
 
 ### 解法
 $$對\Phi積分得\Phi=\int M(x,y) \, dx+f(y)=\int N(x,y) \, dy+g(x)$$
